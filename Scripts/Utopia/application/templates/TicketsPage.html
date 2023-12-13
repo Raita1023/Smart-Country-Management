@@ -1,0 +1,20 @@
+{% extends "BasePage.html" %}
+{% load static %}
+{% block title %}Tickets{% endblock %}
+{% block more-style %}
+<link rel="stylesheet" href="{% static '/CSS/MinistryPage/MinistryPage.css' %}">
+<link rel="stylesheet" href="{% static '/CSS/TicketPage/TicketPage.css' %}">
+{% endblock %}
+{% block content %}
+{% for Ticket in Tickets %}
+<div class="show-details">
+    <span>Document id : {{Ticket.id}}</span><br>
+    <span>{{Ticket.SportName}}</span>
+    <span>{{Ticket.SportVenue}}</span>
+    <span>{{Ticket.SportDate}}</span>
+    <span>{{Ticket.SportSeatType}}</span>
+    <span>{{Ticket.SportSeatNumber}}</span>
+    <span>{{Ticket.SportTicketPrice}}</span>
+</div>
+{% endfor %}
+{% endblock %}
