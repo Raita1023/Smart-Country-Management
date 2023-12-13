@@ -871,7 +871,9 @@ def EntertainmentPage(request):
                 TicketData = {'Ticket': objectU, 'DM': DM, 'Year': Year,
                               'DayName': DayName, 'CityName': CityName, 'GroundName': GroundName}
                 return render(request, 'SportTicket.html', TicketData)
-
+            else:
+                messages.error(
+                    request, 'You do not have enough money to buy the ticket.')
     game = Sport.objects.all()
     d = {'Sport': game}
     return render(request, 'EntertainmentPage.html', d)

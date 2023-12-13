@@ -10,8 +10,6 @@ admin.site.register(MPElection)
 admin.site.register(MinisterPrimaryDetails)
 admin.site.register(CountryMinistries)
 admin.site.register(PublicOpinions)
-admin.site.register(Movies)
-admin.site.register(Sports)
 #entertainment/sports
 admin.site.register(Sport)
 admin.site.register(SportVenue)

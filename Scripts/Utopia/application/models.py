@@ -93,24 +93,6 @@ class PublicOpinions(models.Model):
         return str(self.Opinion)
 
 
-class Movies(models.Model):
-    Theatre = models.CharField(max_length=1000)
-    Date = models.DateField()
-    MovieName = models.CharField(max_length=1000)
-    ShowTime = models.TimeField()
-    HallNumber = models.IntegerField()
-    SeatType = models.CharField(max_length=1000)
-    TicketPrice = models.IntegerField()
-
-
-class Sports(models.Model):
-    Sport = models.CharField(max_length=1000)
-    Vanue = models.CharField(max_length=1000)
-    Date = models.DateField()
-    SeatType = models.CharField(max_length=1000)
-    TicketPrice = models.IntegerField()
-
-
 # entertainment/Sports
 
 

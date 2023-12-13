@@ -9,12 +9,12 @@
 {% for Ticket in Tickets %}
 <div class="show-details">
     <span>Document id : {{Ticket.id}}</span><br>
-    <span>{{Ticket.SportName}}</span>
-    <span>{{Ticket.SportVenue}}</span>
-    <span>{{Ticket.SportDate}}</span>
-    <span>{{Ticket.SportSeatType}}</span>
-    <span>{{Ticket.SportSeatNumber}}</span>
-    <span>{{Ticket.SportTicketPrice}}</span>
+    <span>Event : {{Ticket.SportName}}</span><br>
+    <span>Place : {{Ticket.SportVenue}}</span><br>
+    <span>Date : {{Ticket.SportDate}}</span><br>
+    <span>TicketType : {{Ticket.SportSeatType}}</span><br>
+    <span>SeatNumber : {{Ticket.SportSeatNumber}}</span><br>
+    <span>Price : {{Ticket.SportTicketPrice}}</span>
 </div>
 {% endfor %}
 {% endblock %}
